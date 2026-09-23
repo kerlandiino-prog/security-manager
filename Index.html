@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Maneger</title>
+    <title>Security Manager</title>
 </head>
 
 <body>
     <header>
-        <h1>Security maneger</h1>
+        <h1>Security manager</h1>
         <p>Gestao de escalas, serviços e pagamentos</p>
 
     </header>
@@ -22,13 +22,13 @@
 </nav>
 
 <main>
-    <section id="Inicio">
+    <section id="inicio">
         <h2>Dashboard</h2>
         <p>Bem vindo ao seu sistema de gestao de serviços.</p>
         <h3> Postos ativos</h3>
         <ul>
             <li>Vilela Motors</li>
-            <li>Unimed</li>a\
+            <li>Unimed</li>
             <li>Viafor</li>
             <li>Vivo</li>
 
@@ -42,12 +42,52 @@
 
         <form>
             <label for="data">data do serviço</label>
-            <input type="date" id="data" name="data">
+            <input type="date" id="data" name="data" required>
+            <label for="posto">posto</label>
+
+            <select id="posto" name="posto" required>
+                <option value="selected disabled">selecione um posto</option>
+                <option value="vilela">vilela motors</option>
+                <option value="unimed">unimed</option>
+                <option value="viafor">viafor</option>
+                <option value="vivo">vivo</option>
+                </select>
+
+                <label for="colaborador">colaborador</label>
+                <select id="colaborador" name="colaborador" required>
+                    <option value="selected disabled">selecione um colaborador</option>
+                    <option value="pereira">pereira</option>
+                    <option value="nathan">nathan</option>
+                    <option value="wesley">wesley</option>
+                    <option value="curinga">curinga</option>
+
+                    <label for="valor">valor da diaria:</label>
+                    <input type="number"
+                            id="valor"
+                            name="valor"
+                            min="0"
+                            step="0.01"
+                            placeholder="ex: 180" 
+                            required >  
+                            
+                    <button type="submit">cadastrar serviço</button>        
+
+
+                </select>
+                        
+
+
+
+                
+
+
+
         </form>
+            
 
    </section>
 
-    <section id="colabooradores">
+    <section id="colaboradores">
         <h2>colaboradores</h2>
 
         <ul>
